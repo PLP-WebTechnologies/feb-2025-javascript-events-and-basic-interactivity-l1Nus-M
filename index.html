@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive JavaScript Demo</h1>
+        </header>
+
+        <!-- Event Handling Section -->
+        <section class="event-section">
+            <h2>Event Handling</h2>
+            <div class="event-buttons">
+                <button id="clickButton" class="interactive-button">Click Me!</button>
+                <button id="hoverButton" class="interactive-button">Hover Here!</button>
+                <div id="keypressArea" class="keypress-area">
+                    <p>Press any key in this area</p>
+                    <p id="keypressResult"></p>
+                </div>
+                <button id="secretButton" class="interactive-button">Press Me!</button>
+            </div>
+        </section>
+
+        <!-- Interactive Elements Section -->
+        <section class="interactive-section">
+            <h2>Interactive Elements</h2>
+            <div class="color-changer">
+                <button id="colorButton">Change My Color!</button>
+            </div>
+            
+            <div class="slideshow">
+                <div class="slideshow-container">
+                    <img src="https://images.pexels.com/photos/3560168/pexels-photo-3560168.jpeg" alt="Slide 1" class="slide">
+                    <img src="https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg" alt="Slide 2" class="slide">
+                    <img src="https://images.pexels.com/photos/355508/pexels-photo-355508.jpeg" alt="Slide 3" class="slide">
+                </div>
+                <div class="slideshow-controls">
+                    <button id="prevSlide">Previous</button>
+                    <button id="nextSlide">Next</button>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">Section 1</button>
+                    <div class="accordion-content">
+                        <p>This is the content for section 1. Click to expand or collapse.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Section 2</button>
+                    <div class="accordion-content">
+                        <p>This is the content for section 2. Click to expand or collapse.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Section 3</button>
+                    <div class="accordion-content">
+                        <p>This is the content for section 3. Click to expand or collapse.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Validation Section -->
+        <section class="form-section">
+            <h2>Form Validation</h2>
+            <form id="validationForm">
+                <div class="form-group">
+                    <label for="name">Name (Required)</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <span class="error-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password (Min 8 characters)</label>
+                    <input type="password" id="password" name="password">
+                    <span class="error-message"></span>
+                    <div class="password-strength">
+                        <div class="strength-bar"></div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
